@@ -6,7 +6,7 @@ adddate() {
     done
 }
 
-echo "WILDFLY 18.0.1.Final Standalone Intallation Start..." | adddate >> wildfly.install.log
+echo "WILDFLY 22.0.1.Final Standalone Intallation Start..." | adddate >> wildfly.install.log
 /bin/date +%H:%M:%S  >> wildfly.install.log
 
 while getopts "a:t:p:f:" opt; do
