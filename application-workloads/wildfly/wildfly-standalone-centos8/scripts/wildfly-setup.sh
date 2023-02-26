@@ -39,7 +39,7 @@ echo "yum install -y git unzip java" | adddate >> wildfly.install.log
 yum install -y git unzip java | adddate >> wildfly.install.log 2>&1
 echo "yum -y install wget" | adddate >> wildfly.install.log
 yum -y install wget | adddate >> wildfly.install.log 2>&1
-WILDFLY_RELEASE="26.0.1"
+WILDFLY_RELEASE="22.0.1"
 echo "wget https://download.jboss.org/wildfly/$WILDFLY_RELEASE.Final/wildfly-$WILDFLY_RELEASE.Final.tar.gz" | adddate >> wildfly.install.log
 wget https://download.jboss.org/wildfly/$WILDFLY_RELEASE.Final/wildfly-$WILDFLY_RELEASE.Final.tar.gz >> wildfly.install.log 2>&1
 flag=$?; if [ $flag != 0 ] ; then echo  "ERROR! Downloading WildFly Failed" | adddate >> wildfly.install.log; exit $flag;  fi
